@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data
+data/
+datasets/
+*.csv
+*.h5
+*.hdf5
+
+# Models & Checkpoints
+checkpoints/
+models/
+*.pth
+*.pt
+*.ckpt
+*.onnx
+
+# Experiment Tracking
+wandb/
+runs/
+logs/
+outputs/
+mlruns/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Hydra
+.hydra/

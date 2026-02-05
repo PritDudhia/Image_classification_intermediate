@@ -1,0 +1,28 @@
+# @package _global_
+
+# Vision Transformer (ViT) configuration
+
+model:
+  name: "vit_base"
+  architecture: "vit_base_patch16_224"  # Using timm naming
+  pretrained: true
+  num_classes: 10
+  
+  # ViT specific settings
+  image_size: 224
+  patch_size: 16
+  
+  # Architecture params (if building from scratch)
+  embed_dim: 768
+  depth: 12  # Number of transformer blocks
+  num_heads: 12
+  mlp_ratio: 4.0
+  
+  # Regularization
+  dropout: 0.1
+  attention_dropout: 0.1
+  drop_path_rate: 0.1  # Stochastic depth
+  
+  # Transfer learning
+  freeze_backbone: false
+  freeze_layers: 0  # Freeze first N transformer blocks

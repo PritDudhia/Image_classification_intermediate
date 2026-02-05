@@ -1,0 +1,21 @@
+# @package _global_
+
+# EfficientNet-B3 configuration
+
+model:
+  name: "efficientnet_b3"
+  architecture: "efficientnet_b3"
+  pretrained: true
+  num_classes: 10
+  
+  # EfficientNet settings
+  dropout: 0.3
+  drop_connect_rate: 0.2  # Stochastic depth
+  
+  # Transfer learning
+  freeze_backbone: false
+  freeze_layers: 0
+  
+  # Additional settings
+  in_channels: 3
+  use_global_pool: true

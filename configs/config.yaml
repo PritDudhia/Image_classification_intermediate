@@ -1,0 +1,34 @@
+# Main configuration file for image classification experiments
+
+defaults:
+  - model: resnet50
+  - data: cifar10
+  - training: default
+  - _self_
+
+# Experiment settings
+experiment:
+  name: "baseline_experiment"
+  seed: 42
+  deterministic: true
+
+# Paths
+paths:
+  data_dir: "./data"
+  checkpoint_dir: "./checkpoints"
+  log_dir: "./logs"
+  output_dir: "./outputs"
+
+# Logging
+wandb:
+  enabled: true
+  project: "image-classification"
+  entity: null  # Your W&B username
+  tags: []
+
+tensorboard:
+  enabled: true
+
+# Device settings
+device: "cuda"  # cuda, cpu, or mps (for Mac M1/M2)
+mixed_precision: true  # Enable AMP for faster training

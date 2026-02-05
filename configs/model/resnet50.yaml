@@ -1,0 +1,20 @@
+# @package _global_
+
+# ResNet50 with transfer learning configuration
+
+model:
+  name: "resnet50"
+  architecture: "resnet50"
+  pretrained: true
+  num_classes: 10
+  
+  # Transfer learning settings
+  freeze_backbone: false  # Set to true to freeze backbone initially
+  freeze_layers: 0  # Number of initial layers to freeze (0 = none)
+  
+  # Dropout for regularization
+  dropout: 0.3
+  
+  # Additional settings
+  in_channels: 3
+  use_global_pool: true
