@@ -32,10 +32,10 @@ datasets/
 # Models & Checkpoints
 checkpoints/
 models/
-*.pth
+# *.pth  # Commented out - using Git LFS for model files
 *.pt
 *.ckpt
-*.onnx
+# *.onnx  # Commented out - might need for deployment
 
 # Experiment Tracking
 wandb/
