@@ -1,5 +1,9 @@
 # Advanced Image Classification Project
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://pritici.streamlit.app/)
+
+**🚀 Live Demo: [https://pritici.streamlit.app/](https://pritici.streamlit.app/)**
+
 An intermediate-to-advanced level image classification project implementing modern deep learning techniques and MLOps best practices.
 
 ## 🎯 Learning Objectives
